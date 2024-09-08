@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パーティーアプリ</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- お題ボタンを上部中央に配置 -->
+
+        <!-- お題表示エリア -->
+        <div id="topicDisplay">お題</div>
+
+        <!-- 発言ボタンを4隅に配置 -->
+        <div class="speech-buttons">
+            <button class="speechButton" id="button1">発言1</button>
+            <button class="speechButton" id="button2">発言2</button>
+            <button class="speechButton" id="button3">発言3</button>
+            <button class="speechButton" id="button4">発言4</button>
+        </div>
+
+        <div class="topic-buttons">
+            <button class="topicButton" id="topic1">お題1</button>
+            <button class="topicButton" id="topic2">お題2</button>
+            <button class="topicButton" id="topic3">お題3</button>
+            <button class="topicButton" id="topic4">お題4</button>
+        </div>
+        <!-- ミッションクリアのエフェクトエリア -->
+        <div id="celebration" class="hidden">ミッションクリア！</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
