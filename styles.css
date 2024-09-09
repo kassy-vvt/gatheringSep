@@ -143,3 +143,32 @@ body {
     font-size: 50px;
     color: #e67e22;
 }
+
+@media screen and (orientation: portrait) {
+    body {
+        /* 縦向きの場合の警告やメッセージを表示 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+    }
+
+    body::before {
+        content: '横向きにしてください';
+        font-size: 24px;
+    }
+
+    .container {
+        display: none; /* 縦向きの場合はコンテンツを非表示にする */
+    }
+}
+
+@media screen and (orientation: landscape) {
+    /* 横向きの場合の通常レイアウト */
+    .container {
+        display: block;
+    }
+}
