@@ -1,5 +1,4 @@
 body {
-    font-family: Arial, sans-serif;
     text-align: center;
     background-color: #2c3e50;  /* ダークな背景色 */
     height: 100vh;
@@ -7,6 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-family: "Yuji Boku", serif;
 }
 
 .container {
@@ -23,17 +23,9 @@ body {
     font-size: 40px;
     font-weight: bold;
     color: #ecf0f1;  /* テキスト色を明るく */
-
+    font-family: "Yuji Boku", serif;
     text-align: center;
 }
-
-
-#celebration span {
-    font-size: 50px;
-    color: #e74c3c;  /* ペナルティは赤 */
-    animation: spin 3s linear infinite;
-}
-
 
 #penalty {
     position: fixed;  /* 画面全体を覆う */
@@ -49,16 +41,19 @@ body {
     align-items: center;  /* 縦方向中央揃え */
     z-index: 10;
     display: none;  /* 初期状態で非表示にする */
+    text-align: center;  /* テキストを中央揃え */
 }
 
 #penalty span {
+    font-family: "Yuji Boku", serif;
     font-size: 50px;
-    color: white;
+    color: #ffffff;
+    display: inline-block;  /* 中央揃えを確実にするため */
 }
 
 .topic-buttons {
     position: absolute;
-    top: 10px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -93,6 +88,7 @@ body {
 
 /* ボタンを4隅に配置 */
 #button1 {
+    font-family: "Yuji Boku", serif;
     top: 5%;
     left: 5%;
     background-color: #3498db; /* 明るい青 */
@@ -100,6 +96,7 @@ body {
 }
 
 #button2 {
+    font-family: "Yuji Boku", serif;
     top: 5%;
     right: 5%;
     background-color: #e74c3c; /* 明るい赤 */
@@ -107,6 +104,7 @@ body {
 }
 
 #button3 {
+    font-family: "Yuji Boku", serif;
     bottom: 5%;
     left: 5%;
     background-color: #f1c40f; /* 明るい黄 */
@@ -114,6 +112,7 @@ body {
 }
 
 #button4 {
+    font-family: "Yuji Boku", serif;
     bottom: 5%;
     right: 5%;
     background-color: #2ecc71; /* 明るい緑 */
@@ -121,7 +120,7 @@ body {
 }
 
 .speechButton.done {
-    background-color: #2c3e50; /* 暗くなる色 */
+    background-color: #072a4ed7 !important;
 }
 
 #celebration {
@@ -143,15 +142,4 @@ body {
 #celebration span {
     font-size: 50px;
     color: #e67e22;
-}
-
-
-/* ミッションクリア文字がゆっくり回転する */
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
